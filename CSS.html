@@ -5,15 +5,27 @@
 <title>창호랑이의 강의 기록실</title>
 <meta charset="utf-8">
 <style>
-  a {color:blue;
+
+#active {color: red;}
+
+.saw{color:gray;}
+
+a {color:black; font-weight: bold;
   text-decoration: none;}
+
+h3 {
+  font-size: 25px; text-align: center;
+  text-decoration: underline;
+  }
+
+
 </style>
 </head>
 <body>
   <h1><a href="index.html">WEB공부</a></h1>
   <ol>
-    <li><a href="1.HTML">HTML</a></li>
-    <li><a href="CSS.HTML" style="color:red;text-decoration:underline;">CSS</a></li>
+    <li><a href="1.HTML" class="saw">HTML</a></li>
+    <li><a href="CSS.HTML" class="saw" id="active">CSS</a></li>
     <li><a href="JavaScript.HTML">JavaScript</a></li>
   </ol>
 
@@ -23,6 +35,9 @@
   <li><a href="CSS.HTML"><font color="red">CSS</font></a></li>
   <li><a href="JavaScript.HTML"><font color="black">JavaScript</font></a></li>
 </ol>
+
+<li><a href="CSS.HTML" style="color:red;text-decoration:underline;">CSS</a></li>
+
 -->
 
 <h3>-1번째 강의 기록 (20.05.10)</h3>
@@ -43,5 +58,24 @@ style코드 안에만 갇혀있게 된다.
 글자에 속성을 넣을 수 있다. style=""에 대한 부분은 html 언어이며 속성임.
 <br>text-decoration을 통해서 밑줄을 넣을 수도 뺄 수도 있다. 이것도 마찬가지로 태그 속성으로 넣을
 수 있다. 세미콜론은 이 CSS나 property를 구분하기 위해서 사용된다.
+
+<h3>-4번째 강의 기록 (20.05.23)</h3>
+h3에 대한 폰트 크기나, 정렬 기준을 하기위해서는 마찬가지로 스타일에서 h3를 입력하고
+그에 대한 Property를 부여해주면 됨. 꾸미고 싶은 방법은 CSS text align property등으로
+검색을 해주면 된다.
+
+<h3>-5번째 강의 기록 (20.05.23)</h3>
+현재 페이지는 빨강, 방문한 페이지는 회색, 방문 안한 페이지는 검정으로 만들기.
+.saw라고 하여서 html에 class의 가명을 넣어주게 되고, 이에 대한 적힌 선택자에 대해서 속성을 부여할 수 있음. "."이 속성 부여 가능하게
+만든다.
+<br> 그리고 덧붙여 id선택자 또한 하나의 종류로 존재한다. 같은 선택자 안에서는 뒤에 나온
+property를 따르게 되고, 다른 선택자 사이에서는 id>class>tag순서이다.
+id는 더 하위 개념이어서 class와 구별하여서 사용.<br>
+id=# <br> class=.<br> tag= tag name
+<br>CSS selector라고 구글에 검색하여 활용하기.
+
+
+
+
 </body>
 </html>
