@@ -5,7 +5,14 @@
 <title>창호랑이의 강의 기록실</title>
 <meta charset="utf-8">
 <style>
+body { margin: 0;}
+#grid {
+display: grid;
+grid-template-columns: 0.5fr 3fr}
 
+#contents
+{border-left: 1px black solid;
+padding: 10px;}
 #active {color: red;}
 
 .saw{color:gray;}
@@ -14,21 +21,32 @@ a {color:black; font-weight: bold;
   text-decoration: none;}
 
 h3 {
-  font-size: 25px; text-align: center;
+  font-size: 25px; text-align: left;
   text-decoration: underline;
   }
+
+h1 {text-align: center; font-size: 60px;
+  border-bottom: 3px solid black; margin: 0;
+padding: 20px;}
+
+#grid ol {
+width: 100px;
+margin: 0;
+padding: 20px;}
 
 
 </style>
 </head>
 <body>
   <h1><a href="index.html">WEB공부</a></h1>
+<div id="grid">
+<div>
   <ol>
-    <li><a href="1.html" class="saw">HTML</a></li>
-    <li><a href="CSS.html" class="saw" id="active">CSS</a></li>
-    <li><a href="JavaScript.html">JavaScript</a></li>
+    <li><a href="1.HTML" class="saw">HTML</a></li>
+    <li><a href="CSS.HTML" class="saw" id="active">CSS</a></li>
+    <li><a href="JavaScript.HTML">JavaScript</a></li>
   </ol>
-
+</div>
 <!--
 <ol>
   <li><a href="1.HTML"><font color="blue">HTML</font></a></li>
@@ -39,7 +57,7 @@ h3 {
 <li><a href="CSS.HTML" style="color:red;text-decoration:underline;">CSS</a></li>
 
 -->
-
+<div id="contents">
 <h3>-1번째 강의 기록 (20.05.10)</h3>
 <p>html을 CSS를 통해서 아름답게 만들 수 있다.
 CSS는 하나의 언어이다. 그 이전에는 font라는 언어를 통해서 웹을 꾸미는 것을 도전했다가,
@@ -74,8 +92,14 @@ id는 더 하위 개념이어서 class와 구별하여서 사용.<br>
 id=# <br> class=.<br> tag= tag name
 <br>CSS selector라고 구글에 검색하여 활용하기.
 
+<h3>-6번째 강의 기록 (20.05.24)</h3>
+1. 박스모델 (<a href="Box model.html">Box model</a>)이란? <br>
+2. 테두리 사용하기 (ol과 h1 태그 살펴보기)
 
-
-
+<h3>-7번째 강의 기록 (20.05.24)</h3>
+그리드(<a href="grid.html">grid</a>) 사용하기 <br>
+가장 최신의 방법중 하나임.
+</div>
+</div>
 </body>
 </html>
