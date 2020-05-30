@@ -15,6 +15,14 @@ grid-template-columns: 0.5fr 3fr}
 padding: 10px;}
 #active {color: red;}
 
+@media(max-width:800px) {
+  #grid{
+    display: block;}
+  #contents{
+  border-left:none;
+  }
+}
+
 .saw{color:gray;}
 
 a {color:black; font-weight: bold;
@@ -42,9 +50,9 @@ padding: 20px;}
 <div id="grid">
 <div>
   <ol>
-    <li><a href="1.HTML" class="saw">HTML</a></li>
-    <li><a href="CSS.HTML" class="saw" id="active">CSS</a></li>
-    <li><a href="JavaScript.HTML">JavaScript</a></li>
+    <li><a href="1.html" class="saw">HTML</a></li>
+    <li><a href="CSS.html" class="saw" id="active">CSS</a></li>
+    <li><a href="JavaScript.html">JavaScript</a></li>
   </ol>
 </div>
 <!--
@@ -99,6 +107,13 @@ id=# <br> class=.<br> tag= tag name
 <h3>-7번째 강의 기록 (20.05.24)</h3>
 그리드(<a href="grid.html">grid</a>) 사용하기 <br>
 가장 최신의 방법중 하나임.
+
+<h3>-8번째 강의 기록 (20.05.30)</h3>
+반응형 디자인
+<br>화면의 크기에 따라서 웹의 요쇼들이 반응하는 것을 의미함.
+<br>반응형 디자인(<a href="반응형디자인.html">media query</a>) 사용하기 <br>
+
+
 </div>
 </div>
 </body>
