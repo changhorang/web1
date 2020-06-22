@@ -2,22 +2,34 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
     <title>창호랑이의 강의 기록실</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+
+
+  <script src="color.js">    </script>
+
+</head>
+
+<body>
   <h1><a href="index.html">WEB공부</a></h1>
     <div id="grid">
-  <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="CSS.html">CSS</a></li>
-    <li><a href="3.html">JaveScript</a></li>
-  </ol>
-  <div id="contents">
+<ol>
+  <li><a href="1.HTML">HTML</a></li>
+  <li><a href="CSS.HTML">CSS</a></li>
+  <li><a href="3.HTML">JaveScript</a></li>
+</ol>
+<div id="contents">
+  <input type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
 
 <h3>자바스크립 1번째 강의 20.06.06</h3>
 
-<a href="ex1.html">Example</a>
+<a href="ex1.html">Example1</a>
 <h3>자바스크립 6번째 강의 20.06.06</h3>
 콘솔에서 1+1을 입력시 산술연산자에 의해서 계산이 가능
 <br>+,-,*,/가 존재함.
@@ -33,5 +45,85 @@
 리팩토링 (refactoring)
 <br>코드를 효율적으로 만드느 방법
 
-  </body>
+<h3>-JAVA Script 1번째 강의 기록 (20.06.01)</h3>
+<input type="button" value="night" onclick="
+  nightDayHandler(this);
+">
+<input type="button" value="day" onclick="
+  nightDayHandler(this);
+">
+<br>html의 body는 한 번 나타내면 유동성이 없는 파트이다.
+그렇지만 자바스크립트를 통해서 활동성을 넣어주고 유저와 상호작용을 할 수 있게 된다.
+
+<h3>-JAVA Script 7번째 강의 기록 (20.06.09)</h3>
+variable과 constant (console을 통해서 구현)
+<br> var name = '**';을 통해서 문단 안에 1억개의 이름을 수정할 수 있다.
+<br>Example
+<br>var name = 'changho';
+alert("html의 changho body는 한 번 나타내면 유동성이 없는 파트이다."+name+" 그렇지만 자바스changho크립트를 통해서 활동성을 넣어주고 유저와 상호작용을 할 수 있게 changho된"+name+"다.")
+<br>var은 안써도 무방하지만 쓰는걸 습관화하자.
+
+<h3>-JAVA Script 8번째 강의 기록 (20.06.10)</h3>
+JavaScript에서 CSS를 동작하게 할 수 있는 검색어를 입력함.
+이와 관련하여 night와 day 버튼에 있는 예시를 참고하면 좋다.
+<br>backgroundColor는 대소문자에 유의하여 쓰고, 그냥 color는 글자의 색을 의미하게 된다.
+
+<h3>-JAVA Script 9번째 강의 기록 (20.06.10)</h3>
+html은 programming 언어로 보지는 않는다. 프로그래밍은 시간의 순서에 따라 실행 될 수 있게 하는 것임.
+html은 단지 웹에 대해서 묘사하고 상호작용은 하지 않는다. 자바스크립트는 시간에 따른 또는 조건에 따라
+상호작용이 가능한 프로그래밍 언어이다.
+
+<h3>-JAVA Script 10~13번째 강의 기록 (20.06.10)</h3>
+조건문의 시작 (conditional statement)
+<br>무엇이 불만족인가?
+<br><a href="ex4.html">Example(4)</a>
+Comparision과 Boolean
+Boolean은 true or false 을 의미함.
+
+<h3>-JAVA Script 23번째 강의 기록 (20.06.15)</h3>
+나중에 적용하기. (23.배열과 반복문의 활용 참고)
+<br>
+
+
+<h3>-JAVA Script 24번째 강의 기록 (20.06.15)</h3>
+함수의 예고 (function)
+<a href="ex9.html">Example9</a>
+<br>
+  <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
+
+<h3>-JAVA Script 29번째 강의 기록 (20.06.16)</h3>
+객체의 예고 (Object)
+<br>많은 function을 만들기 보다는 body와 links라는 객체를 만들어 주게됨.
+그럼으로써 directory에 객체를 저장하게 됨.
+<br>ex) document.querySelector('body')
+<br>document는 객체, 그 뒤에 있는 것이 함수이며 method라고 부른다.
+
+<h3>-JAVA Script 30번째 강의 기록 (20.06.17)</h3>
+<a href="ex10.html">Example10</a>
+
+<h3>-JAVA Script 35번째 강의 기록 (20.06.22)</h3>
+JavaScript Comunity에서 중요한 Library. 이를 통해 코딩을 심플하게 만들 수 있다.
+<br>Library vs Framework
+<br>Library는 정해진 규칙내에서 코딩을 하는 것을 의미함.
+대표적으로 jQuery가 있다. jquery를 이용시 반복문을 사용하지 않아도 된다.
+<br>Library를 통해서 코딩을 심플하게 만들 수 있다.
+
+<br>Framework는 직접 규칙을 만든다는 것에서 다르다.
+
+<h3>-JAVA Script 36번째 강의 기록 (20.06.22)</h3>
+UI vs API
+<br>UI(User Interface)
+<br>user가 평소에 보는 내용들
+
+<br>API(Application programming Interface)
+<br>순서대로의 조작을 통해서 애플리케이션이 작동하도록 하는것.
+밑에 예시에서는 alert라는 함수가 API에 해당된다.
+<input type="button" value="Click me" onclick="alert('Olleh')">
+
+</div>
+</div>
+
+</body>
 </html>

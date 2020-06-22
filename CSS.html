@@ -4,9 +4,14 @@
 <head>
 <title>창호랑이의 강의 기록실</title>
 <meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <script src="color.js">    </script>
+
+
   <h1><a href="index.html">WEB공부</a></h1>
 <div id="grid">
 <div>
@@ -27,6 +32,10 @@
 
 -->
 <div id="contents">
+  <input type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
+
 <h3>-1번째 강의 기록 (20.05.10)</h3>
 <p>html을 CSS를 통해서 아름답게 만들 수 있다.
 CSS는 하나의 언어이다. 그 이전에는 font라는 언어를 통해서 웹을 꾸미는 것을 도전했다가,
